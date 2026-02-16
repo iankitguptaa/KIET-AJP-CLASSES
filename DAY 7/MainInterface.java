@@ -5,6 +5,10 @@ interface Calc {
         int s = n1 + n2 + n3;
         System.out.println("Sum = " + s);
     }
+
+    static String getInfo() {
+        return "This is static getInfo method inside calc inteface";
+    }
 }
 
 class Sum implements Calc {
@@ -25,5 +29,6 @@ public class MainInterface {
         Sum c = new Sum();
         c.calculate(10, 20);
         c.calculate(10, 20, 30);
+        System.out.println(Calc.getInfo());
     }
 }
