@@ -3,11 +3,16 @@ interface Calc {
 
     default void calculate(int n1, int n2, int n3) {
         int s = n1 + n2 + n3;
-        System.out.println("Sum = " + s);
+        // System.out.println("Sum = " + s);
+        getPrivateInfo("Sum = " + s);
     }
 
     static String getInfo() {
         return "This is static getInfo method inside calc inteface";
+    }
+
+    private void getPrivateInfo(String msg) {
+        System.out.println(msg);
     }
 }
 
