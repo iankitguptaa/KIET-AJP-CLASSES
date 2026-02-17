@@ -1,0 +1,32 @@
+Q. What is Lamda Expression?
+ Lambda expression is a short form of declaring anonymous function, that refrence is pass to the functional interface object.
+
+Types of Lamda Expression 
+
+1. No Parameter, No Return Type:
+  a. ()->{} Multiple lines in function
+  b. ()-> System.out.println("Lamda Expression") (single line reprsentation)
+
+2. No Parameter, with return Type:  
+  a. ()->{
+    //write your lines here;
+    return 10;
+  } // multiple lines
+  b. ()->10 //return without return keyword
+
+3. with Parameter, No return Type:
+  a. with one Parameter
+  (int num1)->System.out.println(num1) // with one parametere and datatype
+
+  (num1) -> System.out.println(num1) //with one parameter without datatype
+
+  num1 -> system.out.println(num1)
+
+  num1 -> {
+    System.out.println("Multiple lines");
+    System.out.prinltn(num1);
+  }  
+
+ 4. with parameter, with Return Type:
+   (int num1, int num2) -> num1 + num2
+   (int num 1, int num2) -> {return num1+num2} 
