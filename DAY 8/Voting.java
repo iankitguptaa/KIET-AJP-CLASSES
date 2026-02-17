@@ -12,6 +12,6 @@ public class Voting {
                 System.out.println("You are not eligible to vote.");
             }
         };
-        v.checkAge(20); // change age here
+        v.checkAge(20);
     }
 }
