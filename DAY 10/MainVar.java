@@ -4,5 +4,7 @@ public class MainVar {
         int b = 20;
         var name = "kiet mca";
         var value = 10.34;
+        var c = 0.0;
+        c = 39.56;
     }
 }
