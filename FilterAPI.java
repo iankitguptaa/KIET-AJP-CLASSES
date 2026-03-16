@@ -9,6 +9,9 @@ public class FilterAPI {
         list.addAll(List.of(23, 56, 78, 23, 45, 67));
         System.out.println(list);
         Stream listStream = list.stream();
-        listStream.forEach((element) -> System.out.print(element + " "));
+        list.stream().forEach((element) -> System.out.print(element + " "));
+        list.stream().forEach(System.out::println);
+        System.out.println("Count = " + list.stream().count());
+        System.out.println("Count = " + list.stream().filter((item) -> item > 60).count());
     }
 }
