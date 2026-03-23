@@ -8,5 +8,8 @@ public class ReduceEx {
         System.out.println("Sum = " + sum);
         double avg = list.stream().reduce(0, (a, b) -> a + b) / list.size();
         System.out.println("Avg = " + avg);
+        int count = list.stream().reduce(0, (a, b) -> a + 1);
+        System.out.println("Count = " + count);
+
     }
 }
