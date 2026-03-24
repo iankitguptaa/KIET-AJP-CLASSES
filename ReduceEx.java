@@ -10,6 +10,5 @@ public class ReduceEx {
         System.out.println("Avg = " + avg);
         int count = list.stream().reduce(0, (a, b) -> a + 1);
         System.out.println("Count = " + count);
-
     }
 }
