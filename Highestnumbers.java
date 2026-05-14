@@ -5,6 +5,5 @@ public class Highestnumbers {
         List<Integer> list = Arrays.asList(10, 5, 20, 8, 28, 25);
         Integer SecondHighest = list.stream().sorted(Comparator.reverseOrder()).toList().get(1);
         System.out.println(SecondHighest);
-
     }
 }
